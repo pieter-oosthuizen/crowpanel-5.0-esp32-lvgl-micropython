@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS folder attributes
+Icon
+._*
+
+# Other
+*.log
+__pycache__/
+*.pyc
