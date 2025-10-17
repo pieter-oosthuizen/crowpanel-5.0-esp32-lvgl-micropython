@@ -316,9 +316,9 @@ os.remove("main.py")
 
 A 3D-printable enclosure for the **CrowPanel 5.0" ESP32-S3** is included in this repository. It provides a clean desktop setup with easy physical access to the device’s key functions.
 
-**File:** `crowpanel-5.0-custom-enclosure.3mf`
-**Folder:** `/hardware/`
-**Printer:** Bambu Lab A1 (sliced version provided)
+- **File:** `crowpanel-5.0-custom-enclosure.3mf`
+- **Folder:** [`/enclosure/`](/enclosure/)
+- **Printer:** Bambu Lab A1 (sliced version provided)
 
 **Recommended print settings:**
 
