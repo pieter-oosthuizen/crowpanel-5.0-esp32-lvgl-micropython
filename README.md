@@ -13,15 +13,18 @@ MicroPython + LVGL starter project for the **Elecrow CrowPanel 5.0" ESP32-S3 HMI
 
 ## Contents
 
-* [Requirements](#requirements)
-* [Firmware (not included)](#firmware-not-included)
-* [Flash the device (terminal only)](#flash-the-device-terminal-only)
-* [SquareLine → MicroPython export](#squareline--micropython-export)
-* [Copy files to the device](#copy-files-to-the-device)
-* [Run your UI](#run-your-ui)
-* [Repo layout](#repo-layout)
-* [Troubleshooting](#troubleshooting)
-* [Legal & licensing](#legal--licensing)
+- [Requirements](#requirements)
+- [Firmware (not included)](#firmware-not-included)
+- [Flash the device (terminal only)](#flash-the-device-terminal-only)
+- [🖐️ Quick “Hello World” Demo](#quick-hello-world-demo)
+- [🧱 SquareLine → MicroPython Export](#squareline--micropython-export)
+- [Run your UI](#run-your-ui)
+- [Connecting to the REPL](#connecting-to-the-repl)
+- [Troubleshooting](#troubleshooting)
+- [🧰 Enclosure (3D Printable)](#enclosure-3d-printable)
+- [Legal & licensing](#legal--licensing)
+- [Links](#links)
+
 
 ---
 
@@ -304,6 +307,35 @@ os.remove("main.py")
 **Where is the firmware download?**
 
 * Elecrow’s official **5.0" MicroPython tutorial** page links the `firmware-5.0-A.bin`. Download it there and flash via `esptool.py`. ([Elecrow][1])
+
+---
+
+## 🧰 Enclosure (3D Printable)
+
+[![Front](enclosure/enclosure-front-thumb.jpeg)](enclosure/enclosure-front-full.jpeg) [![Back](enclosure/enclosure-back-thumb.jpeg)](enclosure/enclosure-back-full.jpeg) [![Stand](enclosure/enclosure-stand-thumb.jpeg)](enclosure/enclosure-stand-full.jpeg)
+
+A 3D-printable enclosure for the **CrowPanel 5.0" ESP32-S3** is included in this repository. It provides a clean desktop setup with easy physical access to the device’s key functions.
+
+**File:** `crowpanel-5.0-custom-enclosure.3mf`
+**Folder:** `/hardware/`
+**Printer:** Bambu Lab A1 (sliced version provided)
+
+**Recommended print settings:**
+
+* 0.4 mm nozzle
+* PLA filament
+* 0.2 mm layer height
+* 20 % Gyroid infill
+* **No supports required**
+
+**Features:**
+
+* Rear cutouts for **BOOT** and **RESET** buttons (easily accessible without removing the device).
+* Side opening for a **USB-C cable**, allowing connection or power while enclosed.
+* Integrated **stand** that slots into the back and positions the display at a comfortable **45° viewing angle**. (For increased stability, glue the stand into its slot.)
+* Simple snap-in top allows closing the enclosure without permanently locking the device in place.
+
+> The model should also print well on most FDM printers using similar settings. Adjust flow and first-layer parameters as needed for your printer and filament.
 
 ---
 
